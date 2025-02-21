@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>space-portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles2.css') }}">
+
+</head>
+<body>
+{% if user %}
+<h3> Welcome to {{user}} 's Astrophotography Portfolio</h3>
+{% endif %}
+<div id = "andromeda-galaxy">
+     <img src="{{ url_for('static', filename='andromedagalaxy.jpg') }}">
+     <div class = "image-info">
+        <h4>Andromeda Galaxy</h4>
+         <p>abcd</p>
+         <p>ddfg</p>
+
+    </div>
+</div>
+</body>
+</html>

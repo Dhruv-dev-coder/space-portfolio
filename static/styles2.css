@@ -1,0 +1,68 @@
+* {
+    margin: 20;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    height: 100vh;
+    margin: 0;
+    background-image: url('hanna-plants-rDZF1b6Gyk4-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#andromeda-galaxy {
+    width: 500px;
+    margin: 20px auto;
+    position: relative; /* This allows the info to be absolutely positioned within */
+    overflow: hidden; /* Ensures the hover effect doesn't push elements outside */
+}
+
+/* The image itself */
+#andromeda-galaxy img {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover effect for the image (zoom and shadow) */
+#andromeda-galaxy img:hover {
+    transform: scale(1.1); /* Zoom effect */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Larger shadow */
+}
+
+.image-info {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 5px;
+    display: none; /* Hidden by default */
+    text-align: left;
+}
+
+#andromeda-galaxy:hover .image-info {
+    display: block; /* Show info when hovering over the image */
+}
+
+/* Title and text styling */
+.image-info h4 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.image-info p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
